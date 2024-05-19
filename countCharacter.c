@@ -1,13 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "header.h"
 
 int countCharacter(int character){
     char huruf;
     FILE * input;
-    input = fopen("./assets/input.txt","r");
+    input = fopen("./assets/input/input.txt","r");
     if(input==NULL){
         printf("Tidak dapat membuka file...");
         exit(1);
@@ -21,5 +17,6 @@ int countCharacter(int character){
         huruf=fgetc(input);
     }
     fclose(input);
+    character+=1;
     return character;
 }

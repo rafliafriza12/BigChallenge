@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "header.h"
 
 int countLenght(int lenght){
@@ -7,7 +5,7 @@ int countLenght(int lenght){
     char huruf;
     char * sementara;
     FILE * input;
-    input = fopen("./assets/input.txt","r");
+    input = fopen("./assets/input/input.txt","r");
 
     if(input==NULL){
         printf("Tidak bisa membuka file...");

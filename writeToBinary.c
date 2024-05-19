@@ -1,16 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "header.h"
 
 void writeToBinary(data datas[],int word){
-    char fileName[20]    ;
+    char fileName[20];
 
     printf("\nIngin disimpan di file yang mana (fileName.bin) ? ");
     scanf("%s",fileName);
 
-    
+//    char * path = strcat("./assets/outputBinary/",fileName);
 
     FILE * bin;
     bin = fopen(fileName,"wb");

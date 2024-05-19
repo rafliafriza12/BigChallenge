@@ -1,5 +1,9 @@
 #ifndef HEADER_H
 #define HEADER_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 typedef struct dataMentah
 {
@@ -8,12 +12,6 @@ typedef struct dataMentah
     int panjangKata;
 
 } data;
-
-typedef struct dataHasil{
-    double skor;
-    char kata[50];
-    int panjangKata;
-} result;
 
 int countCharacter(int);
 int countLine(int);
@@ -25,6 +23,6 @@ int scoring(char *);
 void bubbleSort(data datas[],int );
 void selectionSort(data datas[],int );
 void writeToBinary(data datas[],int );
-void readBinary(result hasil[],int );
+void readBinary(data hasil[],int );
 
 #endif

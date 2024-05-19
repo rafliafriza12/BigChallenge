@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "header.h"
 
 void strtokCharacter(char *token, char *kalimat,data datas[])

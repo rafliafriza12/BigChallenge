@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "header.h"
 
 int scoring(char * token)
@@ -10,71 +6,85 @@ int scoring(char * token)
 
     for(int i=0;i<strlen(token);i++){
         switch (token[i]){
-        case 'a':
-        case 'e':
-        case 'm':
-        case 'q':
+        case 'h':
             skor+=2;
             break;
-        case 'b':
-        case 'c':
         case 'f':
-        case 'g':
-        case 'k':
-        case 'n':
-        case 'o':
-        case 'r':
+        case 'j':
+        case 'l':
+        case 't':
             skor+=3;
             break;
-        case 'd':
-        case 'i':
-        case 'l':
-        case 'p':
-        case 'h':
+        case 'u':
             skor+=4;
             break;
-        case 'j':
-        case 's':
-        case 'u':
-        case 'w':
-        case 'y':
+        case 'e':
+        case 'i':
             skor+=5;
             break;
-        case 't':
+        case 'a':
+        case 'o':
         case 'v':
-        case 'x':
-        case 'z':
             skor+=6;
             break;
-        case '1':
+        case 'c':
             skor+=7;
             break;
-        case '2':
+        case 'd':
+        case 'k':
+        case 'p':
             skor+=8;
             break;
-        case '3':
+        case 'm':
+        case 'w':
+        case 'z':
             skor+=9;
-            break;
-        case '4':
+        case 'b':
             skor+=10;
-            break;
-        case '5':
-            skor+=11;
-            break;
-        case '6':
+        case 'g':
+        case 'n':
+        case 's':
             skor+=12;
             break;
-        case '7':
+        case 'r':
+        case 'y':
             skor+=13;
             break;
-        case '8':
-            skor+=14;
-            break;
-        case '9':
+        case 'x':
             skor+=15;
             break;
-        case '0':
+        case 'q':
             skor+=16;
+            break;
+        case '1':
+            skor+=1;
+            break;
+        case '2':
+            skor+=2;
+            break;
+        case '3':
+            skor+=3;
+            break;
+        case '4':
+            skor+=4;
+            break;
+        case '5':
+            skor+=5;
+            break;
+        case '6':
+            skor+=6;
+            break;
+        case '7':
+            skor+=7;
+            break;
+        case '8':
+            skor+=8;
+            break;
+        case '9':
+            skor+=9;
+            break;
+        case '0':
+            skor+=10;
             break;
         }
     }
